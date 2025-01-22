@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "Big projet",
+        "description": "Houlalalalalalalalalalalalalalalala",
+        "mainImg": 0,
+        "technos": ["HTML", "CSS", "JavaScript", "PHP"],
+        "images": ["scene-normale.png", "marre.png", "premiere-epee.png"]
+    },
+    {
+        "id": 2,
+        "name": "Big projet 2",
+        "description": "Houlalalalalalalalalalalalalalalala",
+        "mainImg": 1,
+        "technos": ["HTML", "CSS", "JavaScript", "PHP"],
+        "images": ["scene-normale.png", "marre.png", "premiere-epee.png"]
+    },
+    {
+        "id": 3,
+        "name": "Big projet 3",
+        "description": "Houlalalalalalalalalalalalalalalala",
+        "mainImg": 2,
+        "technos": ["HTML", "CSS", "JavaScript", "PHP"],
+        "images": ["scene-normale.png", "marre.png", "premiere-epee.png"]
+    },
+    {
+        "id": 4,
+        "name": "Haut comme 2 pommes",
+        "description": "Elles sont hautes les pommes !",
+        "mainImg": 0,
+        "technos": ["HTML", "CSS", "JavaScript", "PHP"],
+        "images": ["two-apples.png"]
+    }
+]
