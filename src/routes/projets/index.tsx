@@ -6,7 +6,7 @@ export const Route = createFileRoute('/projets/')({
 })
 
 function RouteComponent() {
-    return (
+    return (<div className="w-full p-9 box-border min-h-screen flex flex-col justify-center items-center text-center">
         <Gallery />
-    )
+    </div>)
 }
