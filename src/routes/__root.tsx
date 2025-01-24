@@ -1,14 +1,14 @@
 import { createRootRoute, Outlet } from '@tanstack/react-router'
-import Link from '../components/Links/Link.tsx';
+import Link from '../components/Link.tsx';
 
 export const Route = createRootRoute({
   component: () => (
-    <div className="w-full p-9 overflow-hidden select-none">
-      <div className="p-2 flex gap-2 fixed navbar">
-        <Link to="/" className="[&.active]:font-bold font-heading">
+    <div className="w-full overflow-hidden select-none">
+      <div className="p-2 flex gap-2 top-9 fixed navbar">
+        <Link to="/" color='primary' className="[&.active]:font-bold font-heading">
           Home
         </Link>
-        <Link to="/projets" className="[&.active]:font-bold font-heading">
+        <Link to="/projets" color='primary' className="[&.active]:font-bold font-heading">
           Projets
         </Link>
       </div>
