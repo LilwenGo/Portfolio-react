@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'HammersmithOne';
+    src: url('./assets/fonts/HammersmithOne.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./assets/fonts/Montserrat-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./assets/fonts/Montserrat.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+//Fonts
+$heading: 'HammersmithOne', 'sans-serif';
+$mont: 'Montserrat', 'sans-serif';
+
+$h-l: 61px;
+$h-m: 39.1px;
+$h-s: 25px;
+$p-m: 16px;
+$p-s: 11.1px;
+
+//Colors
+$accent: #3DD2CC;
+$primary: #3E6B89;
+$error: #D1573D;
+$update: #D18B3D;
+$link: #5F5FFF;
+$white: #FFFFFF;
+$black: #000000;
+
+@mixin flex-x($wrap: nowrap) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: $wrap;
+}
+
+@mixin flex-y($wrap: nowrap) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: $wrap;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+      background: $black;
+      color-scheme: dark;
+    }
+  }
+  
+@media (prefers-color-scheme: light) {
+    body {
+        background: $white;
+        color-scheme: light;
+    }
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    border: 2px rgba(255, 255, 255, 0.2) solid;
+    z-index: 10;
+    left: 50%;
+    min-width: fit-content;
+    transform: translateX(-50%);
+}
+
+.title {
+    color: $accent;
+    font-family: $heading;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    &-accent {
+        color: $accent;
+    }
+    &-primary {
+        color: $primary;
+    }
+}
+
+.btn {
+    color: $white;
+    font-size: $p-m;
+    font-weight: 400;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    transition: color 150ms, background-color 150ms;
+    @media (prefers-color-scheme: dark) {
+        color: $black
+    }
+    &:hover {
+        background-color: transparent;
+        font-weight: bold;
+    }
+    &-accent {
+        background-color: $accent;
+        border-color: $accent;
+        &:hover {
+            color: $accent
+        }
+    }
+    &-update {
+        background-color: $update;
+        border-color: $update;
+        &:hover {
+            color: $update
+        }
+    }
+    &-error {
+        background-color: $error;
+        border-color: $error;
+        &:hover {
+            color: $error
+        }
+    }
+}

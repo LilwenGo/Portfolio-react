@@ -2,33 +2,91 @@
     {
         "id": 1,
         "name": "Big projet",
-        "description": "Houlalalalalalalalalalalalalalalala",
+        "description": "Une longue description, pour remplir un gros pavé, comme celui pour lequel j'écris une longue description, pour remplir un gros pavé, comme celui pour lequel j'écris une longue description, pour remplir un gros pavé, comme celui pour lequel j'écris une longue description, pour remplir un gros pavé, comme celui pour lequel j'écris une longue description, pour remplir un gros pavé, comme celui pour lequel j'écris une longue description, pour remplir un gros pavé, comme celui pour lequel j'écris une longue description, pour remplir un gros pavé, comme celui pour lequel j'écris une longue description, pour remplir un gros pavé.",
+        "date": "23/01/2025",
         "mainImg": 0,
         "technos": ["HTML", "CSS", "JavaScript", "PHP"],
-        "images": ["scene-normale.png", "marre.png", "premiere-epee.png"]
+        "images": [
+            {
+                "src": "scene-normale.png",
+                "alt": "Une image"
+            }, 
+            {
+                "src": "marre.png",
+                "alt": "Une image",
+                "desc": "Une longue description, pour remplir un gros pavé, comme celui pour lequel j'écris une longue description, pour remplir un gros pavé."
+            }, 
+            {
+                "src": "premiere-epee.png",
+                "alt": "Une image",
+                "desc": "Une longue description, pour remplir un gros pavé, comme celui pour lequel j'écris une longue description, pour remplir un gros pavé."
+            }
+        ],
+        "urls": ["https://scfm.alwaysdata.net", "https://github.com/LilwenGo"]
     },
     {
         "id": 2,
         "name": "Big projet 2",
         "description": "Houlalalalalalalalalalalalalalalala",
+        "date": "23/01/2025",
         "mainImg": 1,
         "technos": ["HTML", "CSS", "JavaScript", "PHP"],
-        "images": ["scene-normale.png", "marre.png", "premiere-epee.png"]
+        "images": [
+            {
+                "src": "scene-normale.png",
+                "alt": "Une image"
+            }, 
+            {
+                "src": "marre.png",
+                "alt": "Une image"
+            }, 
+            {
+                "src": "premiere-epee.png",
+                "alt": "Une image",
+                "desc": "Une longue description, pour remplir un gros pavé, comme celui pour lequel j'écris une longue description, pour remplir un gros pavé."
+            }
+        ],
+        "urls": ["https://scfm.alwaysdata.net"]
     },
     {
         "id": 3,
         "name": "Big projet 3",
         "description": "Houlalalalalalalalalalalalalalalala",
+        "date": "23/01/2025",
         "mainImg": 2,
         "technos": ["HTML", "CSS", "JavaScript", "PHP"],
-        "images": ["scene-normale.png", "marre.png", "premiere-epee.png"]
+        "images": [
+            {
+                "src": "scene-normale.png",
+                "alt": "Une image",
+                "desc": "Une longue description, pour remplir un gros pavé, comme celui pour lequel j'écris une longue description, pour remplir un gros pavé."
+            }, 
+            {
+                "src": "marre.png",
+                "alt": "Une image"
+            }, 
+            {
+                "src": "premiere-epee.png",
+                "alt": "Une image",
+                "desc": "Une longue description, pour remplir un gros pavé, comme celui pour lequel j'écris une longue description, pour remplir un gros pavé."
+            }
+        ],
+        "urls": ["https://scfm.alwaysdata.net"]
     },
     {
         "id": 4,
         "name": "Haut comme 2 pommes",
         "description": "Elles sont hautes les pommes !",
+        "date": "23/01/2025",
         "mainImg": 0,
         "technos": ["HTML", "CSS", "JavaScript", "PHP"],
-        "images": ["two-apples.png"]
+        "images": [
+            {
+                "src": "two-apples.png",
+                "alt": "Une image",
+                "desc": "Une longue description, pour remplir un gros pavé, comme celui pour lequel j'écris une longue description, pour remplir un gros pavé."
+            }
+        ],
+        "urls": ["https://scfm.alwaysdata.net"]
     }
 ]

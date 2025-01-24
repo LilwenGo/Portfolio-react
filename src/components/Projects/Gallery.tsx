@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react'
 import Card from './Card';
+import Loader from '../Loader';
+import ProjetDataInterface from '../../interfaces/ProjetDataInterface';
 
 export default function Gallery() {
     const [projects, setProjects] = useState([]);
     const [loader, setLoader] = useState(true);
         
     function fetchData() {
-        return fetch('../../../public/data/projets.json')
+        return fetch('/data/projets.json')
             .then((response) => {
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status}`);
@@ -29,17 +31,18 @@ export default function Gallery() {
         <div id="projets" className='w-full flex flex-col gap-9'>
             {
                 loader ? (
-                    <p>Loading...</p>
+                    <Loader />
                 ) : projects.length <= 0 ? (
                     <div></div>
                 ) : (
                     <div className="flex flex-row flex-wrap gap-10 justify-around">
-                        {projects.map((e: {id: number, name: string, description: string, mainImg: number, technos: string[], images: string[]}, i: number) => {
+                        {projects.map((e: ProjetDataInterface, i: number) => {
                             return (
                                 <Card
                                     key={i}
                                     reverse={`${i % 2 !== 0}`}
-                                    image={e.images[e.mainImg]}
+                                    image={e.images[e.mainImg].src}
+                                    imgAlt={e.images[e.mainImg].alt}
                                     name={e.name}
                                     id={e.id}
                                 />
